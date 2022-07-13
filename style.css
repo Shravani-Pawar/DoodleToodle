@@ -1,0 +1,49 @@
+#image {
+  width: 600px;
+}
+body {
+    background-color: rgb(255, 249, 249);
+  }
+#Title{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 80;
+    color: rgb(107, 106, 106);
+    border-width: 1px;
+    border-color:rgb(107, 106, 106) ;
+    width: 800px;
+    padding-bottom: 10px;
+    background-color: rgb(255, 249, 249);
+}
+
+#title:hover{
+    background-color: #D699FF;
+}
+#go:hover{
+    background-color: #D699FF;
+    color: rgb(51, 51, 51);
+}
+
+h2{
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-size: 50;
+    color: #440070;
+}
+h3{
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+#go{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    
+    color: rgb(225, 222, 222);
+    border-width: 1px;
+    border-color:rgb(107, 106, 106) ;
+    font-size: 20px;
+    padding-bottom: 10px;
+    background-color: #8D1CD9;
+    width: 500px;
+}
