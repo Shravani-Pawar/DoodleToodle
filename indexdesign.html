@@ -1,0 +1,76 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Doodle Toodle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+  
+  
+    
+  <link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body>
+
+    <!-- Modal -->
+<div id="myModal" class="modal fade">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Doodles</h4>
+      </div>
+  
+      <div class="modal-body">
+        <img src="sketch1.png">
+        <img src="sketch2.png">
+      </div>
+  
+    </div>
+  </div>
+  <!--2nd modal-->
+  <div id="myModal2" class="modal fade">
+    <div class="modal-content">
+      
+      <h4 class="modal-title">Do you want to exit?</h4>
+      <div class="modal-body">
+        <button id="yesno" onclick="exit()">Yes</button>
+        <button type="button"  data-dismiss="modal" id="yesno"> No</button>
+
+      </div>
+  
+    </div>
+  </div>
+
+
+  <!--Main --->
+    <div class="topbar">
+        <h1 class="h1">Draw:</h1><p id="sketch" class="h1"></p>
+        <div id="timerdiv">
+            <span id="timer">00:00</span>
+
+        </div>
+        <center>
+            <h3>Score: <p id="score">0</p></h3>
+        </center>
+        
+        <div id="topbar">
+            <span><button class="btn"id="sidebtn" onclick="updateCanvas()">Erase</button></span>
+            <span><button class="btn" id="show_sketch"  data-toggle="modal" data-target="#myModal">Show doodles</button></span>
+            <span> <button class="btn" id="sidebtn" data-toggle="modal" data-target="#myModal2">X</button></span>
+        </div>
+        
+    </div>
+  <br>
+  <center>
+  <h4 id="final" class="btn">You've drawn -</h4>
+  </center>
+</body>
+<script src="main2.js"></script>
+</html>
